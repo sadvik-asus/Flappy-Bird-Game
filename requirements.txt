@@ -1,6 +1,2 @@
 pygame
-sys,time
-random,randint
-bird,Bird
-pipe,Pipe
 
