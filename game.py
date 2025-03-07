@@ -19,7 +19,7 @@ class Game:
         self.move_speed=250
         self.start_monitoring = False
         self.score = 0
-        self.font = pg.font.Font("assets/font.ttf",24)
+        self.font = pg.font.Font("Assets/font.ttf",24)
         self.score_text = self.font.render("Score : 0",True,(0,0,0))
         self.score_text_rect = self.score_text.get_rect(center = (100,30))
 
