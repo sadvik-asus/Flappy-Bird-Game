@@ -32,9 +32,9 @@ class Game:
         self.pipes=[]
         self.pipe_generate_counter=71
         self.setUpBgAndGround()
-        self.flapSound = pg.mixer.Sound("assets/sfx/flap.wav")
-        self.flapscore = pg.mixer.Sound("assets/sfx/score.wav")
-        self.flapdead = pg.mixer.Sound("assets/sfx/dead.wav")
+        self.flapSound = pg.mixer.Sound("Assets/sfx/flap.wav")
+        self.flapscore = pg.mixer.Sound("Assets/sfx/score.wav")
+        self.flapdead = pg.mixer.Sound("Assets/sfx/dead.wav")
         
         self.gameLoop()
     
@@ -153,9 +153,9 @@ class Game:
 
     def setUpBgAndGround(self):
         #loading images for bg and ground
-        self.bg_img=pg.transform.scale_by(pg.image.load("assets/bg.png").convert(),self.scale_factor)
-        self.ground1_img=pg.transform.scale_by(pg.image.load("assets/ground.png").convert(),self.scale_factor)
-        self.ground2_img=pg.transform.scale_by(pg.image.load("assets/ground.png").convert(),self.scale_factor)
+        self.bg_img=pg.transform.scale_by(pg.image.load("Assets/bg.png").convert(),self.scale_factor)
+        self.ground1_img=pg.transform.scale_by(pg.image.load("Assets/ground.png").convert(),self.scale_factor)
+        self.ground2_img=pg.transform.scale_by(pg.image.load("Assets/ground.png").convert(),self.scale_factor)
         
         self.ground1_rect=self.ground1_img.get_rect()
         self.ground2_rect=self.ground2_img.get_rect()
