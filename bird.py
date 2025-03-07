@@ -7,10 +7,10 @@ class Bird(pg.sprite.Sprite):
         # scale factor for size
         super(Bird,self).__init__()
         # loading the bird images
-        self.img_list=[pg.transform.scale_by(pg.image.load("assets/birdup.png").convert_alpha(),scale_factor),
-                        pg.transform.scale_by(pg.image.load("assets/birddown.png").convert_alpha(),scale_factor)]
+        self.img_list=[pg.transform.scale_by(pg.image.load("Assets/birdup.png").convert_alpha(),scale_factor),
+                        pg.transform.scale_by(pg.image.load("Assets/birddown.png").convert_alpha(),scale_factor)]
         # giving a flap sound 
-        self.flapSound = pg.mixer.Sound("assets/sfx/flap.wav")
+        self.flapSound = pg.mixer.Sound("Assets/sfx/flap.wav")
         self.image_index=0
         self.image=self.img_list[self.image_index]
         self.rect=self.image.get_rect(center=(100,100))
